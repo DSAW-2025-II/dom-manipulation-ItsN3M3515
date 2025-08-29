@@ -4,10 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/styles.css" />
-    <title>Document</title>
+    <title>TODO List</title>
   </head>
   <body>
-    <h1>Mi TODO list</h1>
+    <div class="main">
+      <h1>Mi TODO list</h1>
+      
+      <!-- Input section for adding new tasks -->
+      <div class="input-section">
+        <input type="text" id="taskInput" placeholder="Escribe una nueva tarea..." />
+        <button id="addTaskBtn">Agregar Tarea</button>
+      </div>
+      
+      <div class="tabla-tareas">
+        <table id="taskTable">
+          <thead>
+            <tr>
+              <th>Tarea</th>
+              <th>Estado</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+
+          <tbody id="taskTableBody">
+            <!-- Tasks will be dynamically inserted here -->
+          </tbody>
+          
+        </table>
+      </div>
+    </div>
     <script src="scripts/script.js"></script>
   </body>
 </html>
