@@ -9,25 +9,30 @@
   <body>
     <div class="main">
       <h1>Mi TODO list</h1>
+      
+      <!-- Input section for adding new tasks -->
+      <div class="input-section">
+        <input type="text" id="taskInput" placeholder="Escribe una nueva tarea..." />
+        <button id="addTaskBtn">Agregar Tarea</button>
+      </div>
+      
       <div class="tabla-tareas">
-        <table>
+        <table id="taskTable">
           <thead>
             <tr>
               <th>Tarea</th>
               <th>Estado</th>
+              <th>Acciones</th>
             </tr>
           </thead>
 
-          <tbody>
-            <tr>
-              <td>Ejemplo de tarea</td>
-              <td>Tarea Completada!</td>
-            </tr>
+          <tbody id="taskTableBody">
+            <!-- Tasks will be dynamically inserted here -->
           </tbody>
           
         </table>
       </div>
-      <script src="scripts/script.js"></script>
     </div>
+    <script src="scripts/script.js"></script>
   </body>
 </html>
